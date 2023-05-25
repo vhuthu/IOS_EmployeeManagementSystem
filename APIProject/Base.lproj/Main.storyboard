@@ -18,8 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p63-s0-L4h" userLabel="home text">
-                                <rect key="frame" x="80.666666666666686" y="153" width="231.66666666666663" height="68.333333333333314"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="50"/>
+                                <rect key="frame" x="60" y="153" width="273.33333333333337" height="68.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="59"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -43,14 +43,22 @@
                                     <segue destination="NF8-Nr-Le0" kind="show" id="p2x-hr-TR8"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome" translatesAutoresizingMaskIntoConstraints="NO" id="iYA-iZ-6ZH">
+                                <rect key="frame" x="56" y="217" width="281" height="300"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iYA-iZ-6ZH" firstAttribute="top" secondItem="p63-s0-L4h" secondAttribute="bottom" constant="-4.3333333333333144" id="8pO-Tq-wVq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iya-f5-HW3" secondAttribute="bottom" constant="50" id="Mg6-wb-mIf"/>
+                            <constraint firstItem="iya-f5-HW3" firstAttribute="top" secondItem="iYA-iZ-6ZH" secondAttribute="bottom" constant="196" id="WC4-Ct-oGl"/>
                             <constraint firstItem="p63-s0-L4h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ZAQ-Rg-KMM"/>
                             <constraint firstItem="iya-f5-HW3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZfX-da-ZdM"/>
                             <constraint firstItem="p63-s0-L4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hhW-Hg-R9R"/>
+                            <constraint firstItem="iYA-iZ-6ZH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-59" id="j3C-ac-t9v"/>
+                            <constraint firstItem="iYA-iZ-6ZH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="nNE-X9-tDl"/>
+                            <constraint firstItem="iYA-iZ-6ZH" firstAttribute="centerX" secondItem="p63-s0-L4h" secondAttribute="centerX" id="zSp-Cy-mXT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="8yB-Br-EbI"/>
@@ -86,7 +94,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkI-qm-YNu">
-                                                    <rect key="frame" x="49.333333333333336" y="11" width="7.6666666666666643" height="63"/>
+                                                    <rect key="frame" x="49.333333333333314" y="11" width="7.6666666666666856" height="63"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -406,6 +414,7 @@
     </scenes>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
+        <image name="Welcome" width="276.33334350585938" height="172"/>
         <image name="arrow.forward" catalog="system" width="128" height="95"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
